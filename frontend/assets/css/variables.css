@@ -1,0 +1,184 @@
+/* Doto Design System - CSS Variables & Tokens */
+:root {
+  /* Font Family */
+  --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Base Light Theme Tokens */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --bg-tertiary: #f1f5f9;
+  --bg-elevated: #ffffff;
+  --bg-hover: #f1f5f9;
+  --bg-active: #e2e8f0;
+  
+  --border-subtle: #e2e8f0;
+  --border-strong: #cbd5e1;
+  --border-focus: #3b82f6;
+
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  --text-inverse: #ffffff;
+
+  --sidebar-bg: #f8fafc;
+  --sidebar-border: #e2e8f0;
+  --sidebar-hover: #e2e8f0;
+  --sidebar-active: #e2e8f0;
+
+  /* Brand Accents */
+  --brand-primary: #3b82f6;
+  --brand-primary-hover: #2563eb;
+  --brand-primary-light: rgba(59, 130, 246, 0.1);
+
+  /* Priorities */
+  --priority-high: #ef4444;
+  --priority-high-bg: rgba(239, 68, 68, 0.12);
+  --priority-medium: #f59e0b;
+  --priority-medium-bg: rgba(245, 158, 11, 0.12);
+  --priority-low: #3b82f6;
+  --priority-low-bg: rgba(59, 130, 246, 0.12);
+  --priority-none: #94a3b8;
+  --priority-none-bg: rgba(148, 163, 184, 0.12);
+
+  /* Functional Status */
+  --success: #10b981;
+  --success-bg: rgba(16, 185, 129, 0.12);
+  --warning: #f59e0b;
+  --warning-bg: rgba(245, 158, 11, 0.12);
+  --danger: #ef4444;
+  --danger-bg: rgba(239, 68, 68, 0.12);
+  --info: #0ea5e9;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+
+  /* Spacing & Radii */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+
+  --sidebar-width: 270px;
+  --detail-panel-width: 390px;
+  --topbar-height: 56px;
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 220ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-spring: 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Dark Theme (Default Pro Theme) */
+[data-theme="dark"] {
+  --bg-primary: #121418;
+  --bg-secondary: #181b20;
+  --bg-tertiary: #1f232b;
+  --bg-elevated: #242933;
+  --bg-hover: #262c38;
+  --bg-active: #2e3544;
+
+  --border-subtle: #272d38;
+  --border-strong: #374151;
+  --border-focus: #3b82f6;
+
+  --text-primary: #f3f4f6;
+  --text-secondary: #9ca3af;
+  --text-muted: #64748b;
+  --text-inverse: #0f172a;
+
+  --sidebar-bg: #15181d;
+  --sidebar-border: #212630;
+  --sidebar-hover: #1f242d;
+  --sidebar-active: #272e3a;
+
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 8px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -2px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 12px 20px -3px rgba(0, 0, 0, 0.6), 0 4px 6px -4px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 24px 30px -5px rgba(0, 0, 0, 0.7);
+}
+
+/* Forest Emerald Theme */
+[data-theme="forest"] {
+  --bg-primary: #0f1715;
+  --bg-secondary: #141f1c;
+  --bg-tertiary: #1a2925;
+  --bg-elevated: #21332e;
+  --bg-hover: #263c36;
+  --bg-active: #2c4740;
+
+  --border-subtle: #243833;
+  --border-strong: #2f4d46;
+  --border-focus: #10b981;
+
+  --text-primary: #e6f4f1;
+  --text-secondary: #9bbbb4;
+  --text-muted: #5e847c;
+
+  --sidebar-bg: #121c19;
+  --sidebar-border: #1d2e29;
+  --sidebar-hover: #192723;
+  --sidebar-active: #223631;
+
+  --brand-primary: #10b981;
+  --brand-primary-hover: #059669;
+  --brand-primary-light: rgba(16, 185, 129, 0.12);
+}
+
+/* Sunset Warm Theme */
+[data-theme="sunset"] {
+  --bg-primary: #181313;
+  --bg-secondary: #211919;
+  --bg-tertiary: #2a2020;
+  --bg-elevated: #362929;
+  --bg-hover: #403030;
+  --bg-active: #4d3a3a;
+
+  --border-subtle: #3a2b2b;
+  --border-strong: #543f3f;
+  --border-focus: #f97316;
+
+  --text-primary: #fdf2f2;
+  --text-secondary: #d6b8b8;
+  --text-muted: #917575;
+
+  --sidebar-bg: #1c1515;
+  --sidebar-border: #2d2222;
+  --sidebar-hover: #261c1c;
+  --sidebar-active: #332626;
+
+  --brand-primary: #f97316;
+  --brand-primary-hover: #ea580c;
+  --brand-primary-light: rgba(249, 115, 22, 0.12);
+}
+
+/* Cyber Slate Theme */
+[data-theme="cyber"] {
+  --bg-primary: #0a0d14;
+  --bg-secondary: #101522;
+  --bg-tertiary: #161e2f;
+  --bg-elevated: #1e283e;
+  --bg-hover: #23304a;
+  --bg-active: #2b3b5c;
+
+  --border-subtle: #1e293b;
+  --border-strong: #334155;
+  --border-focus: #06b6d4;
+
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+
+  --sidebar-bg: #0d121c;
+  --sidebar-border: #162030;
+  --sidebar-hover: #131a27;
+  --sidebar-active: #1c273a;
+
+  --brand-primary: #06b6d4;
+  --brand-primary-hover: #0891b2;
+  --brand-primary-light: rgba(6, 182, 212, 0.12);
+}

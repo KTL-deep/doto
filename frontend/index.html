@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Doto — Управление задачами, привычками и Pomodoro таймер (TickTick Clone)</title>
+  <meta name="description" content="Doto — мощный и эстетичный аналог TickTick: управление задачами, умные списки, трекер привычек, Pomodoro таймер, матрица Эйзенхауэра и календарь.">
+
+  <!-- Google Fonts: Plus Jakarta Sans, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="/assets/css/variables.css">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/layout.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/views.css">
+  <link rel="stylesheet" href="/assets/css/modals.css">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%233b82f6%22/><path d=%22M30 52 L43 65 L70 38%22 fill=%22none%22 stroke=%22white%22 stroke-width=%2210%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/></svg>">
+</head>
+<body>
+  <!-- App Container -->
+  <div id="app">
+    <!-- Rendered dynamically by JavaScript -->
+    <div style="height: 100vh; display: flex; align-items: center; justify-content: center; background: #121418; color: #94a3b8; font-family: sans-serif;">
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
+        <div style="font-size: 32px;">🚀</div>
+        <div style="font-weight: 600; font-size: 15px; color: #f3f4f6;">Загрузка Doto...</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notifications Container -->
+  <div id="toast-container"></div>
+
+  <!-- Main JavaScript Module -->
+  <script type="module" src="/assets/js/app.js"></script>
+</body>
+</html>
